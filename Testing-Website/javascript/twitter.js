@@ -1,7 +1,6 @@
-function twitter() {
-	var tweet = prompt("Type your tweet, must be less then 140 characters.")
-	//Creates Tweet
-	if (tweet.length <= 140){
-	}
-	//Checks tweet length. Writes the tweet on the page
+function twitter(){
+	var TweetMain = prompt("What is your tweet?")
+	//Asks for the Tweet,
+	document.getElementById('TweetText').innerHTML = TweetMain
+	//Prints the tweet on the paragraph with the ID of TweetMain
 }
