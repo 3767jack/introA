@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script>
+function writeTweet(){
+	var TweetMain = prompt("What is your tweet?")
+	document.getElementById('TweetText').innerHTML = TweetMain
+}
+</script>
+<head>
+	<title>tweet2</title>
+</head>
+<body background="images/background.jpg">
+<center>
+<font size='5.6' face= 'bebas' color='white'>
+<button type="button" value="submit" onclick="writeTweet();">Cick to create Tweet.</button>
+</center>
+</font>
+<center>
+<font size='5.6' face= 'bebas' color='white'>
+<p id="TweetText"> </p>
+</font>
+</center>
+</body>
+</html>
