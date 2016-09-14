@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html>
-<script>
-function twitter(){
-	var TweetMain = prompt("What is your tweet?")
-	if (TweetMain.length <= 20){
-	document.getElementById('TweetText').innerHTML = TweetMain
-	}
+
+
+<script type="text/javascript">
+function tweet(){
+	//instead use the value of #tweet
+	document.getElementById("tweet1").innerHTML = document.getElementById("tweet").value;
 }
 </script>
+
 								<head>
-						<title>Jack's Testing Site</title>
+					<title>Jack's Testing Site</title>
 								</head>
 <body>
 <body background="images/background.jpg">
-<font size='6' face= 'reckoner' color='white'>
+<font size='6' face= 'bebas' color='white'>
 				<center>
 	<h1> Jack's Testing Site</h1> 
 				</center>
 <center>
 	<font size='5.6' face= 'bebas' color='white'>
 	<p>
-	This is Jack Lesniewski's testing site of all of his code. Currently there are two options to choose. A simple prompt chat <br>(DO NOT CHOOSE TO STOP MESSAGES FROM THIS WEBSITE.)</br> The second choice is a tweet that shows up on the screen. This is Tweet system V.1 and is being worked on daily. Thats all for now, enjoy :)
-	<br>
+	Jack Lesniewski's testing site for all of his code. Currently(and proudly) showing off a main chat asking you questions and a Twitter Tweet WIP function. <br> Please check update log for more information, have a nice day :) </p>
 	<hr>
-	<p id= tweet2></p>
+	<input id= "tweet" type="text" name="Tweet" value="" maxlength="140" var="">
+	<button type="button" name="submit" value="submit" onclick="tweet()">Submit</button>
 	</font> 
 	</p>
+	<p id="tweet1"></p>
 	<button type="button" onclick="Button1()">Run Chat</button>
-	<button type="button" value="submit" onclick="twitter();"> Cick to create Tweet. </button>
+	<button type="button" onclick="UpdateLog()">Check Update Log</button>
 </center>
 <center>
 <img src="">
 </center>
-<br>
 <hr>
-<font size='5.6' face= 'bebas' color='white'>
 <center>
-<p id= TweetText> The "Tweet" will be shown here. Keep in mind when you reset the "Tweet" the text will reset.</p>
-</center>
+<font size='2' face= 'bebas' color='white'>
+<p>CopyRight Jack Lesniewski</p>
 </font>
+</center>
 </body>
+		<script src= "javascript/twitter.js"></script>
 		<script src= "javascript/button.js"></script>
+		<script src= "javascript/updatelog.js"></script>
 </html>
