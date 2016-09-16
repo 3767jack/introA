@@ -1,0 +1,16 @@
+*{
+A{text-decoration:none}
+}
+.HeaderMenu {
+	position: top;
+	background-color: #000000;
+	background: cover;
+	height: 50px;
+	border-bottom: 0px;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+	opacity: .5
+
+}
+

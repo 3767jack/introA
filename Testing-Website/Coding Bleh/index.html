@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+	apiKey: "AIzaSyCp1vte19QZluyJQ2MuL7LtMC6VmHy0MFE",
+    authDomain: "my-website-693d9.firebaseapp.com",
+    databaseURL: "https://my-website-693d9.firebaseio.com",
+    storageBucket: "",
+    messagingSenderId: "940952597494"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script type="text/javascript">
+function tweet(){
+	//instead use the value of #tweet
+	document.getElementById("tweet1").innerHTML = document.getElementById("tweet").value;
+}
+</script>
+	<style>
+		A{text-decoration:none}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		li {
+			float: left;
+			border-right: 1px solid #bbb;
+			border-left: 1px solid #bbb;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #ffffff;
+		}
+		.active {
+    background-color: #559FE3;
+    height: 50px;
+	border-bottom: 0px;
+	padding-left: auto;
+	padding-right: auto;
+}
+	</style>
+<head>
+		<title><u>Jack's Testing Site<u></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body background="images/background.jpg">
+	<div class="HeaderMenu">
+		<center>
+		<ul>
+			<li class="active"><a href="index.html">
+				<font size="4" face="bebas" color="white">
+					<span>Home Page</span>
+				</font>
+			</a></li>
+			<li><a href="updatelog.html">
+				<font size="4" face="bebas" color="white">
+					<span>Update Log</span>
+				</font>
+			</a></li>
+			<li style="float:right"><a href="testing.html">
+				<font size="4" face="bebas" color="white">
+					<span>uber mega k00l testing area</span>
+				</font>
+			</a></li>
+			<li style="float:right"><a href="aboutme.html">
+				<font size="4" face="bebas" color="white">
+					<span>About Me</span>
+				</font>
+			</a></li>
+		</ul>
+		</center>
+	</div>
+<font size='6' face= 'bebas' color='white'>
+				<center>
+	<h1> Jack's Testing Site</h1> 
+				</center>
+<center>
+	<font size='5.6' face= 'bebas' color='white'>
+		<p>
+			Jack Lesniewski's testing site for all of his code. Currently(and proudly) showing off a main chat asking you questions and a Twitter Tweet WIP function. <br> Please check update log for more information, have a nice day :)
+		</p>
+	<hr>
+		<input id= "tweet" type="text" name="Tweet" value="" maxlength="140" var="">
+		<button type="button" name="submit" value="submit" onclick="tweet()">Submit</button>
+	</font> 
+	</p>
+		<p id="tweet1"></p>
+		<button type="button" onclick="Button1()">Run Chat</button>
+		<button type="button" onclick="SignIn()">Sign In</button>
+</center>
+<center>
+<img src="">
+</center>
+<hr>
+<center>
+<font size='2' face= 'bebas' color='white'>
+<p>CopyRight Jack Lesniewski</p>
+<p>Credit to Bagel & Co for the font</p>
+</font>
+</center>
+<font src= "fonts/bebas.TTF"></font>
+</body>
+		<script src= "javascript/twitter.js"></script>
+		<script src= "javascript/signin.js"></script>
+		<script src= "javascript/button.js"></script>
+		<script src= "javascript/updatelog.js"></script>
+</html>
