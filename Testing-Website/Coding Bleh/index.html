@@ -21,6 +21,14 @@ function tweet(){
 }
 </script>
 	<style>
+	@font-face {
+    font-family: bebas;
+    src: url(fonts/bebas.TFF);
+	}
+
+	div {
+    font-family: bebas;
+	}
 		A{text-decoration:none}
 		ul{
 			list-style-type: none;
@@ -54,7 +62,7 @@ function tweet(){
 }
 	</style>
 <head>
-		<title>Jack's Testing Site</title>
+		<title><u>Jack's Testing Site<u></title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body background="images/background.jpg">
@@ -89,14 +97,14 @@ function tweet(){
 	<h1> Jack's Testing Site</h1> 
 				</center>
 <center>
-	<font size='5.6' face= 'bebas' color='white'>
-		<p>
-			Jack Lesniewski's testing site for all of his code. Currently(and proudly) showing off a main chat asking you questions and a Twitter Tweet WIP function. <br> Please check update log for more information, have a nice day :)
-		</p>
-	<hr>
-		<input id= "tweet" type="text" name="Tweet" value="" maxlength="140" var="">
-		<button type="button" name="submit" value="submit" onclick="tweet()">Submit</button>
-	</font> 
+	<div>
+			<p>
+				Jack Lesniewski's testing site for all of his code. Currently showing off a main chat asking you questions and a Twitter Tweet WIP function. <br> Please check update log for more information, have a nice day :)
+			</p>
+		<hr>
+			<input id= "tweet" type="text" name="Tweet" value="" maxlength="140" var="">
+			<button type="button" name="submit" value="submit" onclick="tweet()">Submit</button>
+	</div>
 	</p>
 		<p id="tweet1"></p>
 		<button type="button" onclick="Button1()">Run Chat</button>
@@ -107,15 +115,16 @@ function tweet(){
 </center>
 <hr>
 <center>
+<div>
 <font size='2' face= 'bebas' color='white'>
 <p>CopyRight Jack Lesniewski</p>
 <p>Credit to Bagel & Co for the font</p>
+</div>
 </font>
 </center>
-<font src= "fonts/bebas.TTF"></font>
 </body>
 		<script src= "javascript/twitter.js"></script>
-		<script src= "javascript/SignIn.js"></script>
+		<script src= "javascript/signin.js"></script>
 		<script src= "javascript/button.js"></script>
 		<script src= "javascript/updatelog.js"></script>
 </html>
