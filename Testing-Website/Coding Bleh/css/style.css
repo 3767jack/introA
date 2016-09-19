@@ -14,3 +14,9 @@ A{text-decoration:none}
 
 }
 
+
+@font-face{
+	font-family: "bebas";
+	src: url('../fonts/Bebas.TTF');
+}
+
