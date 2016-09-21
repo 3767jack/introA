@@ -29,6 +29,6 @@ function showWelcome() {
 
 	$("#login").hide();
 	$("#welcome").show();
-	$("#welcomeText").html("Hello, " + user.displayName);
+	$("#welcomeText").html("Hello, " + user.displayName + "!");
 	getElementById(login).innerHTML = " "
 }
