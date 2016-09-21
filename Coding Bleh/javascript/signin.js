@@ -26,7 +26,9 @@ function SignIn() {
 };
 
 function showWelcome() {
-	$("login").hide();
-	$("welcome").show();
+
+	$("#login").hide();
+	$("#welcome").show();
 	$("#welcomeText").html("Hello, " + user.displayName);
+	getElementById(login).innerHTML = ""
 }
