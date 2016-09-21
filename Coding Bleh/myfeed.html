@@ -1,5 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
+
+<script type="text/javascript">
+function tweet(){
+	//instead use the value of #tweet
+	document.getElementById("tweet1").innerHTML = document.getElementById("tweet").value;
+}
+</script>
 <style>
 	@font-face {
     font-family: bebas;
@@ -38,8 +45,8 @@
 		}
 		.active {
     background-color: #559FE3;
-    height: 50px;
-	border-bottom: 0px;
+    height: 52px;
+	border-bottom: 1px;
 	padding-left: auto;
 	padding-right: auto;
 	}
@@ -51,37 +58,37 @@
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-	}
-	.button span {
-	  cursor: pointer;
-	  display: inline-block;
-	  position: relative;
-	  transition: 0.5s;
-	}
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-	.button span:after {
-	  content: '»';
-	  position: absolute;
-	  opacity: 0;
-	  top: 0;
-	  right: -20px;
-	  transition: 0.5s;
-	}
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-	.button:hover span {
-	  padding-right: 25px;
-	}
+.button:hover span {
+  padding-right: 25px;
+}
 
-	.button:hover span:after {
-	  opacity: 1;
-	  right: 0;
-	}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 	</style>
 <head>
 
-					<title>Update Log</title>
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-								</head>
+	<title>My Feed</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 <body>
 	<div class="HeaderMenu">
 		<center>
@@ -91,12 +98,12 @@
 						<span>Home Page</span>
 					</font>
 				</a></li>
-				<li class="active"><a class="button" href="updatelog.html">
+				<li><a class="button" href="updatelog.html">
 					<font size="4" face="SF2" color="white">
 						<span>Update Log</span>
 					</font>
 				</a></li>
-				<li style="float:right"><a class="button" href="myfeed.html">
+				<li class="active" style="float:right"><a class="button" href="myfeed.html">
 					<font size="4" face="SF2" color="white">
 						<span>My feed</span>
 					</font>
@@ -114,17 +121,25 @@
 			</ul>
 		</center>
 	</div>
-<font size='6' face= 'bebas' color='white'>
+<font size='5' face= 'SFBold' color='white'>
 				<center>
-	<h1> Jack's Testing Site</h1> 
+	<h1>My Feed</h1> 
 				</center>
 <center>
-	<font size='5.6' face= 'bebas' color='white'>
-	<p>The biggest update release yet.<br> Update 1.0 Beta features an update to the Twitter Chat feature. <br> Now you only have to type in the box to get the wanted tweet and press submit. <br> Text fixes within the twitter chat have also been fixed. <br> A complete change to the website main page, new background image and font. <br> CSS code in development New pages for the site are being worked on. <br> New text on the front page. <br> Welcome to the page image pop up is being worked on.</p>
-</font>
-<font size='2' face= 'bebas' color='white'>
-<p>CopyRight Jack Lesniewski</p>
-<p>Credit to Bagel & Co for the font</p>
-</font>
-</body
-</html>
+	<font size='5.6' face= 'SF' color='white'>
+	<p id="welcomeText">Your feed will show up under here.</p>
+	</font> 
+	</p>
+</center>
+	<center>
+		<font size='2' face= 'bebas' color='white'>
+		<p>CopyRight Jack Lesniewski</p>
+		<p>Credit to Bagel & Co for the font</p>
+	</font>
+</center>
+<font src= "fonts/bebas.TTF"></font>
+</body>
+		<script src= "javascript/twitter.js"></script>
+		<script src= "javascript/button.js"></script>
+		<script src= "javascript/updatelog.js"></script>
+</html5>
