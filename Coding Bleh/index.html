@@ -62,8 +62,13 @@ function tweet(){
 	}
 	</style>
 <head>
-		<title>Jack's Testing Site</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Jack's Testing Site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
 </head>
 <body background="images/background.jpg">
 	<div class="HeaderMenu">
@@ -103,10 +108,13 @@ function tweet(){
 	<p id="welcomeText"></p> 
 				</center>
 <center>
-	<div>
+	<div id="login">
 			<p>
-				Jack Lesniewski's testing site for all of his code. Currently showing off a main chat asking you questions and a Twitter Tweet WIP function. <br> Please check update log for more information, have a nice day :)
+				Jack Lesniewski's testing site for all of his code. Currently showing off a main chat asking you questions and a Twitter Tweet WIP function. <br> Please check update log for more information, have a nice day :) <br>
+				Please log in.
 			</p>
+	</div>
+	<div>
 		<hr>
 			<input id= "tweet" type="text" name="Tweet" value="" maxlength="140" var="">
 			<button type="button" name="submit" value="submit" onclick="tweet()">Submit</button>
@@ -136,5 +144,7 @@ function tweet(){
 <script src= "javascript/button.js"></script>
 <script src= "javascript/updatelog.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../javascript/bootstrap.min.js"></script>
 </body>
 </html>
