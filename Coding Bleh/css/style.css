@@ -15,6 +15,11 @@ html {
 }
 
 @font-face{
+	font-family: "SFUL";
+	src: url('../fonts/SFUL.OTF');
+}
+
+@font-face{
 	font-family: "Dreams";
 	src: url('../fonts/CaviarDreams.TTF');
 }
@@ -64,4 +69,7 @@ html {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }

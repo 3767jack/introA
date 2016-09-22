@@ -29,6 +29,12 @@ function showWelcome() {
 
 	$("#login").hide();
 	$("#welcome").show();
-	$("#welcomeText").html("Hello, " + user.displayName + "! Your feed will show up under here.");
+	$("#welcomeText").html("Hello, " + user.displayName + "!");
 	getElementById(login).innerHTML = ""
 }
+
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
