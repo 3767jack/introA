@@ -35,6 +35,10 @@ html {
 	font-family: "SFBold";
 	src: url('../fonts/SF2.otf');
 }
+@font-face{
+  font-family: "SFR";
+  src: url('../fonts/SFR.otf');
+}
 
 
 	.button {
