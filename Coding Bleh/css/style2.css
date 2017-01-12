@@ -1,0 +1,79 @@
+*{
+A{text-decoration:none}
+}
+
+html {
+	height: 100%;
+	background: url(../images/background2.jpeg);
+	background-size: cover;
+}
+
+
+@font-face{
+	font-family: "bebas";
+	src: url('../fonts/Bebas.TTF');
+}
+
+@font-face{
+	font-family: "SFUL";
+	src: url('../fonts/SFUL.OTF');
+}
+
+@font-face{
+	font-family: "Dreams";
+	src: url('../fonts/CaviarDreams.TTF');
+}
+@font-face{
+	font-family: "SF";
+	src: url('../fonts/SF.OTF');
+}
+@font-face{
+	font-family: "SF2";
+	src: url('../fonts/SF2.otf');
+}
+@font-face{
+	font-family: "SFBold";
+	src: url('../fonts/SF2.otf');
+}
+@font-face{
+  font-family: "SFR";
+  src: url('../fonts/SFR.otf');
+}
+
+
+	.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
